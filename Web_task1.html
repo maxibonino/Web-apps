@@ -6,12 +6,24 @@
 	<fieldset>
 		<legend>Регистрационная фома пользователя</legend>
 		<p>Регистрация</p>
-		<label>Имя:</label><input type="text" name="name">
-		<label>Фамилия:</label><input type="text" name="surname">
-		<label>Страна проживания</label><>
+		<label>Имя:</label><input type="text" name="name"><br>
+		<label>Фамилия:</label><input type="text" name="surname"><br>
+		<label>Страна проживания</label>
+		<select>
+			<option>Россия</option>
+			<option>Великобритания</option>
+			<option>Германия</option>
+			<option>Франция</option>
+		</select>
+		<br>
 		<label>Владение языками:</label>
-		<label for="">русский</label><input type="radio" name="sex" value="male">
-		<label for="">русский</label><input type="radio" name="sex" value="female">
+		<label for="ru">русский</label><input type="radio" name="sex" value="ru">
+		<label for="eng">английский</label><input type="radio" name="sex" value="eng">
+		<label for="de">немецкий</label><input type="radio" name="sex" value="de">
+
+		<label>Введите логин:</label><input type="text" name=""><br>
+		<label>Введите пароль:</label><input type="password" name=""><br>
+		<label>Повторите пароль:</label><input type="password" name="">
 	</fieldset>
 </body>
 </html>
