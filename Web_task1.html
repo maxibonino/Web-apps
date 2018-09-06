@@ -3,27 +3,35 @@
 <head>
 </head>
 <body>
-	<fieldset>
-		<legend>Регистрационная фома пользователя</legend>
-		<p>Регистрация</p>
-		<label>Имя:</label><input type="text" name="name"><br>
-		<label>Фамилия:</label><input type="text" name="surname"><br>
-		<label>Страна проживания</label>
-		<select>
-			<option>Россия</option>
-			<option>Великобритания</option>
-			<option>Германия</option>
-			<option>Франция</option>
-		</select>
-		<br>
-		<label>Владение языками:</label>
-		<label for="ru">русский</label><input type="radio" name="sex" value="ru">
-		<label for="eng">английский</label><input type="radio" name="sex" value="eng">
-		<label for="de">немецкий</label><input type="radio" name="sex" value="de">
+	<form>
+		<fieldset>
+			<legend>Регистрационная фома пользователя</legend>
+			<p>Регистрация</p>
+			<label for="name">Имя:</label><input type="text" id="name"><br>
+			<label for="surname">Фамилия:</label><input type="text" id="surname"><br>
+			<label>Укажите пол:</label>
+			<label for="male">мужской</label><input type="radio" id="male" name="lang">
+			<label for="female">женский</label><input type="radio" id="female" name="lang"><br>
 
-		<label>Введите логин:</label><input type="text" name=""><br>
-		<label>Введите пароль:</label><input type="password" name=""><br>
-		<label>Повторите пароль:</label><input type="password" name="">
-	</fieldset>
+			<label>Страна проживания</label>
+			<select>
+				<option>Россия</option>
+				<option>Великобритания</option>
+				<option>Германия</option>
+				<option>Франция</option>
+			</select>
+			<br>
+			<label>Владение языками:</label>
+			<label for="ru">русский</label><input type="checkbox" id="ru" name="lang">
+			<label for="eng">английский</label><input type="checkbox" id="eng" name="lang">
+			<label for="de">немецкий</label><input type="checkbox" id="de" name="lang"><br>
+
+			<label for="login">Введите логин:</label><input type="text" id="login"><br>
+			<label for="pwd">Введите пароль:</label><input type="password" id="pwd"><br>
+			<label for="repwd">Повторите пароль:</label><input type="password" id="repwd">
+		</fieldset>
+		<input type="submit" name="">
+		<input type="reset" name="">
+	</form>
 </body>
 </html>
