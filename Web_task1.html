@@ -1,37 +1,46 @@
-<!doctype>
-<html>
+<!doctype html>
+<html lang="ru">
 <head>
+	<title>Web task 1</title>
+	<meta charset="utf-8">
 </head>
+
 <body>
-	<form>
-		<fieldset>
+	<form method="GET">
+		<fieldset title="ebat kopat">
 			<legend>Регистрационная фома пользователя</legend>
-			<p>Регистрация</p>
-			<label for="name">Имя:</label><input type="text" id="name"><br>
-			<label for="surname">Фамилия:</label><input type="text" id="surname"><br>
-			<label>Укажите пол:</label>
+			<p><label for="name">Имя: </label><input type="text" id="name"></p>
+			<p><label for="surname">Фамилия:</label><input type="text" id="surname"></p>
+			<p><label>Укажите пол:</label>
 			<label for="male">мужской</label><input type="radio" id="male" name="lang">
-			<label for="female">женский</label><input type="radio" id="female" name="lang"><br>
+			<label for="female">женский</label><input type="radio" id="female" name="lang"></p>
 
-			<label>Страна проживания</label>
-			<select>
-				<option>Россия</option>
-				<option>Великобритания</option>
-				<option>Германия</option>
-				<option>Франция</option>
-			</select>
-			<br>
-			<label>Владение языками:</label>
-			<label for="ru">русский</label><input type="checkbox" id="ru" name="lang">
-			<label for="eng">английский</label><input type="checkbox" id="eng" name="lang">
-			<label for="de">немецкий</label><input type="checkbox" id="de" name="lang"><br>
+			<p>
+				<label>Страна проживания</label>
+				<select>
+					<option>Россия</option>
+					<option>Великобритания</option>
+					<option>Германия</option>
+					<option>Франция</option>
+				</select>
+			</p>
+			
+			<p>
+				<label>Владение языками:</label>
+				<label for="ru">русский</label><input type="checkbox" id="ru" name="lang">
+				<label for="eng">английский</label><input type="checkbox" id="eng" name="lang">
+				<label for="de">немецкий</label><input type="checkbox" id="de" name="lang">
+			</p>
 
-			<label for="login">Введите логин:</label><input type="text" id="login"><br>
-			<label for="pwd">Введите пароль:</label><input type="password" id="pwd"><br>
+			<p><label for="login">Введите логин:</label><input type="text" id="login"></p>
+			<p><label for="pwd">Введите пароль:</label><input type="password" id="pwd"></p>
 			<label for="repwd">Повторите пароль:</label><input type="password" id="repwd">
 		</fieldset>
-		<input type="submit" name="">
-		<input type="reset" name="">
+
+		<p>
+			<input type="submit">
+			<input type="reset">
+		</p>
 	</form>
 </body>
 </html>
